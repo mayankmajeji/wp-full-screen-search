@@ -1,0 +1,1 @@
+# wp-full-screen-search
