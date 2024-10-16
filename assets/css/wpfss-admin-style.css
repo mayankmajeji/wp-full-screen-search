@@ -1,0 +1,142 @@
+/*
+* Admin Styles
+*/
+
+.settings_page_wp-full-screen-search #wpcontent{
+    padding: 0;
+}
+.wpfss-page-wrapper.wrap{
+    margin: 0;
+} 
+.wpfss-page-wrapper a{
+    text-decoration: none;
+} 
+.wpfss-page-header{
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.wpfss-container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.wpfss-flex-box{
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.wpfss-logo-wrapper a{
+    display: flex;
+    align-items: center;
+}
+.wpfss-container #poststuff h3 {
+    padding: 12px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e6e6e6;
+}
+.wpfss-container textarea {
+    border-radius: 0;
+    border: 1px solid #ccd0d4;
+    background: #f8f8f8;
+    font-family:Courier New;
+}
+.wpfss-page-wrapper .media-upload-form .notice, 
+.wpfss-page-wrapper .media-upload-form div.error, 
+.wpfss-page-wrapper.wrap .notice, 
+.wpfss-page-wrapper.wrap div.error, 
+.wpfss-page-wrapper.wrap div.updated{
+    margin-top: 0;
+}
+.wpfss-list{
+    padding-left: 18px;
+}
+.wpfss-list li{
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 1em 0;
+    list-style: square;
+}
+.wpfss-container .wpfss-clear:before { 
+    content: " "; 
+    display: table; 
+}
+.wpfss-container .wpfss-clear:after { 
+    clear: both; 
+    content: " "; 
+    display: table; 
+}
+.wpfss-container .wpfss-description {
+    margin: 8px 0 0;
+} 
+.wpfss-container .wpfss-row { 
+    padding: 15px 0;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.wpfss-container .wpfss-row:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+} 
+.wpfss-container .wpfss-label label { 
+    font-weight: 600; 
+}
+.wpfss-switch-toggle { 
+    position: relative; 
+    display: inline-block; 
+    width: 40px; 
+    height: 22px; 
+    background-color: rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    transition: all 0.3s; 
+    cursor: pointer; 
+}
+.wpfss-switch-toggle::before { 
+    content: ''; 
+    position: absolute; 
+    width: 18px; 
+    height: 18px; 
+    border-radius:50%; 
+    background-color: white; 
+    top: 2px; left: 2px; 
+    transition: all 0.3s; 
+}
+.wpfss-switch-checkbox:checked + .wpfss-switch-toggle::before { 
+    left : 20px; 
+}
+.wpfss-switch-checkbox:checked + .wpfss-switch-toggle { 
+    background-color: #4cc57e; 
+}
+.wpfss-switch-checkbox { 
+    display : none !important; 
+}
+.wpfss-settings #poststuff .inside{
+    border-bottom: 1px solid #e4e4e4;
+}
+.wpfss-settings #poststuff .inside:last-child {
+    border: none;
+}
+.wpfss-settings .plugin-sidebar ul{
+    padding-left: 17px;
+}
+.wpfss-settings .plugin-sidebar ul li{
+    list-style: square;
+}
