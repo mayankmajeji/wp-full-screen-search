@@ -2,9 +2,9 @@
 Contributors: mayankmajeji, ThemeMantis
 Tags: ajax search, custom search, search, search form, wordpress search
 Requires at least: 4.0
-Tested up to: 6.5.3
+Tested up to: 6.5.5
 Requires PHP: 5.2
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,3 +83,6 @@ Mayank Majeji
 = 1.0.1 =
 * Bug fixed
 * Tested with WordPress version 6.5.3
+
+= 1.1 =
+* Escaped output to enhance security

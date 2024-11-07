@@ -1,0 +1,33 @@
+{
+  "name": "wp-full-screen-search",
+  "version": "1.1.0",
+  "description": "Converts default WordPress search to full screen search overlay.",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "author": "Mayank Majeji",
+  "repository": "mayankmajeji/wp-full-screen-search",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
+    "sass": "^1"
+  },
+  "scripts": {
+    "bump:patch": "bump patch --commit 'Version %s.' wp-full-screen-search.php package.json package-lock.json readme.txt",
+    "bump:minor": "bump minor --commit 'Version %s.' wp-full-screen-search.php package.json package-lock.json readme.txt",
+    "bump:major": "bump major --commit 'Version %s.' wp-full-screen-search.php package.json package-lock.json readme.txt",
+    "icons": "sharp -i .wordpress-org/icon.svg -o .wordpress-org/icon-128x128.png -f png --palette resize 128 128 && sharp -i .wordpress-org/icon.svg -o .wordpress-org/icon-256x256.png -f png --palette resize 256 256 && sharp -i .wordpress-org/icon-light.svg -o docs/assets/logo.png -f png --palette resize 256 256",
+    "build-admin": "sass --no-source-map assets/sass/wpss-admin-style.scss assets/css/wpup-admin-style.css",
+    "build-frontend": "sass --no-source-map assets/sass/wpss-style.scss assets/css/wpup-style.css",
+    "build": "npm run build-admin && npm run build-frontend",
+    "watch": "sass --watch --poll assets/sass/wpss-admin-style.scss assets/css/wpss-admin-style.css && assets/sass/wpss-style.scss assets/css/wpss-style.css",
+    "version": "npm install # See https://github.com/JS-DevTools/version-bump-prompt/issues/42",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0"
+  }
+}
